@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mate in One - chess tactics, one move at a time</title>
+<meta name="description" content="Mate in One is a chess tactics trainer: 12 hand-verified positions, one killing move each. A real engine checks your move - any move that mates counts.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#14100c; color:#efe6d8; min-height:100vh; }
+  .hero { min-height:92vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:40px 20px;
+    background:radial-gradient(ellipse 75% 50% at 50% 110%, #e8b04b22 0%, #7a5a1e14 40%, transparent 70%); }
+  .badge { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#e8b04b; border:1px solid #4a3a1e; border-radius:999px; padding:6px 16px; margin-bottom:26px; }
+  h1 { font-size:clamp(38px,7.5vw,72px); font-weight:800; line-height:1.06;
+    background:linear-gradient(120deg,#f7e6c4,#e8b04b 45%,#a5703b); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { font-size:clamp(16px,2.4vw,21px); color:#8d7f6b; max-width:560px; margin-top:20px; line-height:1.55; }
+  .cta { margin-top:38px; display:inline-block; background:linear-gradient(135deg,#e8b04b,#a5703b); color:#1a1208; font-size:18px; font-weight:700;
+    padding:16px 44px; border-radius:14px; text-decoration:none; box-shadow:0 10px 34px #e8b04b40; transition:transform .15s ease; }
+  .cta:hover { transform:translateY(-2px); }
+  .feats { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; max-width:900px; margin:0 auto; padding:20px 20px 70px; }
+  .f { background:#1c1610; border:1px solid #33281a; border-radius:14px; padding:22px; }
+  .f .ic { font-size:26px; }
+  .f h3 { font-size:16px; margin:10px 0 6px; }
+  .f p { font-size:14px; color:#8d7f6b; line-height:1.5; }
+  footer { text-align:center; color:#5c5142; font-size:13px; padding:26px; border-top:1px solid #241c12; }
+  footer a { color:#e8b04b; }
+</style>
+</head>
+<body>
+  <section class="hero">
+    <div class="badge">iLanis App Factory &middot; idea #12</div>
+    <h1>One move.<br>That's all you get.</h1>
+    <p class="sub">Twelve positions, twelve killing blows. White to move and checkmate in a single move - back-rankers, queen raids, and the classic scholar's finish. A real chess engine judges your move, so any move that mates counts.</p>
+    <a class="cta" href="app.html">Play the puzzles</a>
+  </section>
+  <section class="feats">
+    <div class="f"><div class="ic">&#9822;</div><h3>Real engine</h3><p>Full legal move generation with a checkmate test under the hood. "Not mate" means the king genuinely escapes - not that you picked the wrong solution.</p></div>
+    <div class="f"><div class="ic">&#128161;</div><h3>Hints that don't spoil</h3><p>Stuck? The hint shows which piece delivers mate. Where it goes is still on you.</p></div>
+    <div class="f"><div class="ic">&#9989;</div><h3>Tap to play</h3><p>Tap a piece, see its legal squares, tap the destination. Legal moves only - no illegal-move frustration.</p></div>
+    <div class="f"><div class="ic">&#128190;</div><h3>Progress saved</h3><p>Solved puzzles are remembered in your browser. Come back and finish the set later.</p></div>
+  </section>
+  <footer>No sign-up. No tracking. Everything runs in your browser.<br>
+  Built by the <a href="https://ilanis-agent.github.io/app-factory/">iLanis App Factory</a> &middot; <a href="https://github.com/iLanis-agent/mate-in-one">source on GitHub</a></footer>
+</body>
+</html>
